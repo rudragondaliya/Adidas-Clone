@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.slider{
+    height: 40px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+
+}
+
+.ah-words-wrapper{
+    margin-top: 7px;
+    word-spacing: 5px;
+    font-size: 12px;
+}
+
+#list{
+    line-height: 40px;
+    text-decoration: none;
+    
+}
