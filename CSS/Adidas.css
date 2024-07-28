@@ -24,3 +24,103 @@
     text-decoration: none;
     
 }
+
+
+.navigation{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    background-color: white;
+    border: 2px solid;
+    position: relative;
+}
+
+.nav-list>a{
+    text-decoration: none;
+    position: relative;
+}
+
+
+#link1{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+#link2{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+#link3{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+#links{
+    color: gray;
+
+}
+
+.nav-list{
+    display: flex;
+    gap: 15px;
+}
+
+#link-red{
+    color: rgb(247, 53, 53);
+    font-weight: 700;
+}
+
+
+.nav-list>a:hover::before{
+    content: '';
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all 0.2s;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.nav-list>a:hover::after{
+   content: '';
+   height: 2px;
+   position: absolute;
+   left: 0;
+   bottom: 0px;
+   background-color: black;
+   opacity: 1;
+   width: 100%;
+   
+}
+
+.nav-list>.red-line:hover::before{
+    content: '';
+    height: 2px;
+    background-color: rgb(234, 23, 23);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all 0.2s;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.nav-list>.red-line:hover::after{
+    content: '';
+    height: 2px;
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    background-color: rgb(233, 24, 24);
+    opacity: 1;
+    width: 100%;
+    
+ }
